@@ -296,7 +296,7 @@ ul {
 }
 
 .team .container .team-members li .team-content {
-    padding: 32px 16px;
+    padding: 32px 16px 0;
 }
 
 .team .container .team-members li h3 {
@@ -371,3 +371,32 @@ footer {
     background-repeat: no-repeat;
 }
 
+.icon-border {
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 100px;
+    border: 1px solid #8E8F99;
+    margin-bottom: 8px;
+}
+
+
+
+.social-networks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin: 8px 16px 32px 16px;
+}
+
+
+.socials-icon {
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    fill: #FFFFFF;
+}
