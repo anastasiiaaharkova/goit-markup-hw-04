@@ -62,6 +62,8 @@ h2, h3 {
     background-color: #2E2F42;
     padding-top: 188px;
     padding-bottom: 188px;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
 .button {
@@ -80,6 +82,9 @@ h2, h3 {
     justify-content: center;
     border-radius: 4px;
     text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -166,7 +171,7 @@ ul {
 .page-nav .link:active,
 .page-nav .link:focus,
 .contacts .link:hover,
-.contacts .link:focus
+.contacts .link:focus,
 .page-nav .link-active:active,
 .page-nav .link-active:focus,
 .page-nav .link-active:hover {
@@ -193,6 +198,7 @@ ul {
 
     .header {
         border-bottom: 1px solid #E7E9FC;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .header .container {
@@ -481,3 +487,16 @@ footer {
     background-color: #404BBF;
     border-radius: 2px;
 }
+
+.page-nav .link,
+.page-nav .link-active,
+.contacts .link, 
+.socials-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    background-color: #31D0AA;
+}
+
