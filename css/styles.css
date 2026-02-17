@@ -430,7 +430,7 @@ footer {
 .social-media p {
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
@@ -474,9 +474,17 @@ footer .socials-icon {
     color: #F4F4FD;
 }
 
-/* show overlay when hovering anywhere over the portfolio item */
+.portfolio-section .portfolio li {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .portfolio-section .portfolio li:hover .overlay {
     transform: translateY(0);
+}
+
+.portfolio-section .portfolio li {
+    /* prepare animation when shadow changes on hover */
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-section .portfolio li:hover {
