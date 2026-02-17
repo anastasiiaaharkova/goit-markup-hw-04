@@ -129,6 +129,7 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    align-items: baseline;
 }
 
 .logo {
@@ -198,7 +199,9 @@ ul {
 
     .header {
         border-bottom: 1px solid #E7E9FC;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+            0 1px 1px 0 rgba(46, 47, 66, 0.16),
+            0 2px 1px 0 rgba(46, 47, 66, 0.08);
     }
 
     .header .container {
@@ -309,7 +312,9 @@ ul {
 }
 
 .team .container .team-members > li {
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team .container .team-members li .team-content {
@@ -346,7 +351,6 @@ ul {
     display: flex;
     flex-direction: column;
     width: 360px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-section .container .portfolio li .portfolio-content {
@@ -468,7 +472,7 @@ footer .socials-icon {
     background-color: #4D5AE5;
     width: 100%;
     height: 100%;
-    padding: 40px 32px 164px;
+    padding: 40px 32px;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #F4F4FD;
@@ -483,12 +487,13 @@ footer .socials-icon {
 }
 
 .portfolio-section .portfolio li {
-    /* prepare animation when shadow changes on hover */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-section .portfolio li:hover {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .page-nav .link-active {
@@ -509,13 +514,21 @@ footer .socials-icon {
 
 .page-nav .link,
 .page-nav .link-active,
-.contacts .link, 
-.socials-link {
+.contacts .link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.socials-link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-members li:hover .socials-link,
+.team-members li:focus .socials-link {
+    background-color: #404BBF;
+}
+
+footer .socials-link:hover,
+footer .socials-link:focus {
     background-color: #31D0AA;
 }
 
